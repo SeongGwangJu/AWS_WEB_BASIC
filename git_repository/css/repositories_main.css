@@ -4,7 +4,7 @@
     background-color: rgb(246, 248, 250);
 }  */
 
-.app-main-container {
+.app-main-container{
     display: flex;
     justify-content: space-between; /**/
     margin: 8px auto 0px;
@@ -12,18 +12,18 @@
     width:1280px;
 }
 
-.main-left {
+.main-left{
     margin-top: 32px;
     width: 296px;
 }
 
-.main-right {
+.main-right{
     width: 896px;
     height: 100px;
-    background-color: #eee;
+    background-color: purple;
 }
 
-.img-border {
+.img-border{
     border: 2px solid #eee;
     border-radius: 50%;
     width: 100%;
@@ -34,9 +34,13 @@
     width: 100%;
 }
 
+.profile-names-container {
+    padding: 16px 0px;
+}
 .profile-user-name {
     font-size: 28px;
     font-weight: 700;
+    color:#333;
 }
 
 .profile-user-username {
