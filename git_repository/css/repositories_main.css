@@ -20,7 +20,7 @@
 .main-right{
     width: 896px;
     height: 100px;
-    background-color: purple;
+    background-color: #eee;
 }
 
 .img-border{
@@ -47,4 +47,29 @@
     font-size :20px;
     font-weight: 300;
     color: #555;
+}
+
+.edit-profile-buttons {
+    margin-bottom: 16px;
+}
+
+.follow-link * {
+    color: #888;
+    text-decoration: none;
+}
+/* :not(내용) : 내용 빼고 전체적용 */
+
+.follow-link,
+.follow-font-b {
+    font-weight: 300;
+}
+
+.follow-container a .follow-font-b {
+    font-weight: 500;
+    color : #333;
+}
+    /* 가상클래스 선택자. 
+    hover : 마우스가 올라가면 -> 색상변경*/
+.follow-container a *:hover {
+    color: #0969da;
 }
