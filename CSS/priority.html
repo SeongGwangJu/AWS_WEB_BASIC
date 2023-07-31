@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>priority</title>
+
+    <style>
+        button {
+            #btn { 
+                /* id스타일 */
+                color : blue;
+            }
+            .c-button {
+                /* 클래스 스타일 */
+                color : yellow;
+            }
+            .test-div button {
+                /* 클래스 + 버튼 -> 그냥 클래스보다 높아진다.  */
+                color : red;
+            }
+            button {
+                color : red; } 
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="test-div">
+        <button id = "btn" class = "c-button"> 버튼 </button>
+
+        <button> 버튼2 </button>
+    </div>
+</body>
+</html>
