@@ -19,8 +19,29 @@
 
 .main-right{
     width: 896px;
-    height: 100px;
+    height: 1000px;
     background-color: #eee;
+}
+
+.profile-img-container{
+    position : relative;
+}
+
+.user-status-border{
+    /* absolute :내가 원하는 지점으로 */
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    background-color: white;
+    cursor: pointer;
 }
 
 .img-border{
@@ -127,4 +148,46 @@
 }
 .Achievements-img img * {
     width:100%;
+}
+
+.Achievements-beta{
+    display: inline-block;
+    border : 1px solid #1a7f37;
+    border-radius: 14px; /*폰트크기랑 동일하게*/
+    padding:1.428px 8px;
+    color: #1a7f37;
+    font-weight: 300;
+}
+
+.Achievements-bottom {
+    margin-top: 8px;
+}
+
+.send-feedback-link {
+    text-decoration: none;
+    font-weight: 300;
+    color: #0969da
+}
+.send-feedback-link :hover {
+    text-decoration: underline;
+}
+
+.Organization-items{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.Organizaions-img{
+    margin-right: 3px;
+    margin-bottom: 3px;
+    border: 1px solid #dbdbdb;
+    border-radius:6px;
+    width: 32px;
+    height: 32px;
+    background-color : 3px;
+}
+
+.Organizaions-img img {
+    width:32px;
+    height:32px;
 }
