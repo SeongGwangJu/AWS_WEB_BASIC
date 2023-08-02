@@ -9,7 +9,8 @@ window.onload = () => {
     console.log("`username: userList[0].username`");
     console.log(`username: userList[0].username`);
     console.log("`username: ${userList[0].username}`");
-    console.log(`username: ${userList[0].username}`); //${}안에는 변수로 인식함
+    console.log(`username: ${userList[0].username}`); 
+    //${}안에는 변수로 인식함
     //근데 왜 백쿼터를 써야하는데?
     
     loadUserList();

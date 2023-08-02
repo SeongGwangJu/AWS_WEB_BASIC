@@ -81,3 +81,31 @@ const loadBookList3 = () => {
     bookListOl3.innerHTML = bookTest.join("")
     
 }
+
+
+const addBook = () => {
+    const bookNameInput = document.querySelector(".book-name");
+    const authorInput = document.querySelector(".author");
+    const publicationInput = document.querySelector(".publisher");
+
+    bookList.push({
+        bookName: bookNameInput.value,
+        author: authorInput.value,
+        publication: publicationInput.value
+    });
+
+    loadBookList2();
+
+}
+
+const addBookOnClickHandle = () => {
+    const book = {
+        bookName: document.querySelector(".book-name").value,
+        author: document.querySelector(".author").value,
+        publication: document.querySelector(".publisher").value
+    }
+
+    bookList.push(book)
+    loadBookList2();
+
+}
