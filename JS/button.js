@@ -4,12 +4,12 @@ const plus = () => {
     //HTML태그안에 들어있는 요소를 가지고와서 int로 변환해라
     let oldNumber = parseInt(resultObj.innerHTML);
 
-    resultObj.innerHTML = oldNumber +1 ;
+    resultObj.innerHTML = oldNumber + 1;
 }
 
 const minus = () => {
     const resultObj = document.querySelector(".result");
     let oldNumber = parseInt(resultObj.innerHTML);
 
-    resultObj.innerHTML = oldNumber -1;
+    resultObj.innerHTML = oldNumber - 1;
 }

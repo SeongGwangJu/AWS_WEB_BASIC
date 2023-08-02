@@ -1,18 +1,19 @@
 
-//const signinButtonOnClickHandle = () => {
-//   AccountService.getInstance.signin(); //싱글톤
-//}
+const signinButtonOnClickHandle = () => {
+   AccountService.getInstance().signin(); //싱글톤
+};
+
 class AccountService {
     
-    authUsername = "aaa"
-    authPassword = "1234"
+    authUsername = "aaa";
+    authPassword = "1234";
 
     // 변수명 앞에 # 붙이면 private 접근지정자
     static #instance = null;
 
     static getInstance() {
         if(this.#instance == null) {
-            this.#instance = new AccountService;
+            this.#instance = new AccountService();
         }
         return this.#instance;
     }
@@ -24,11 +25,11 @@ class AccountService {
         const username = usernameInput.value;
         const password = passwordInput.value;
 
-        //console.log(usernameInput.value);
-        //console.log(passwordInput.value);
+        console.log(usernameInput.value);
+        console.log(passwordInput.value);
         
         if(username !== this.authUsername || password !== this.authPassword) {
-            alert("사용자 정보를 확인하세요");
+            alert("사용자 정보를 확인하세요.");
             return;
         }
 
