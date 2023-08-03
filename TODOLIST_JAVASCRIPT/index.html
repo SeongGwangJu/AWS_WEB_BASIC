@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/welcome.css">
 </head>
 <body>
     <div id="root">
@@ -22,11 +23,30 @@
                 </ul>
             </aside>
             <main class="main-container">
-                
+                <div class="welcome-page-container" invisible>
+                    <h1 class="welcome-page-title">TODOLIST</h1>
+                    <button class="write-link-button">Go to write</button>
+                </div>
+                <div class="todolist-page-container">
+                    <header>
+                        <div>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <button>추가</button>
+                            <button>초기화</button>
+                        </div>
+                    </header>
+                    <main>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </main>
+                </div>
             </main>
         </div>
     </div>
     <script src="./js/index.js"></script>
-    <script src="./JS/sidebar.js"></script>
+    <script src="./js/sidebar.js"></script>
 </body>
 </html>
