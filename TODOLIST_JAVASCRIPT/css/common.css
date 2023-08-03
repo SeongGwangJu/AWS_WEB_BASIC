@@ -40,3 +40,18 @@ btn:active {
 .invisible {
     display: none !important;
 }
+
+.text-input {
+    outline: none;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding:5px 20px;
+}
+
+.text-input:focus {
+    outline: 2px solid #ffbb00;
+}
+
+.w-f {
+    width:100%;
+}

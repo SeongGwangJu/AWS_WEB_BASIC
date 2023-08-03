@@ -1,5 +1,5 @@
 .sidebar {
-    transition: left 1s ease;
+    transition: left 0.5s ease;
     /* linear / ease / ease-in / ease-out / ease-in-out 등이 있음.  */
     position: absolute;
     top: 0px;
