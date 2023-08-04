@@ -31,10 +31,11 @@
 				<div class="todolist-page-container">
 					<header>
 						<div class="todolist-header-items">
-							<input type="text" class="text-input w-f" placeholder="please Enter ...">
+							<input type="text" class="text-input w-f" 
+							placeholder="please Enter todo ..." onkeyup="addTodoOnKeyUpHandle(event);">
 						</div>
 						<div class="todolist-header-items">
-							<button class="btn w-f">추가</button>
+							<button class="btn w-f" onclick="addTodoButtonOnClickHandle()">추가</button>
 						</div>
 					</header>
 					<ul class="todolist-main-container">
@@ -60,9 +61,12 @@
 		</div>
 	</div>
 	<script src="./js/index.js"></script>
+	<script src="./JS/utils.js"></script>
 	<script src="./js/sidebar.js"></script>
 	<script src="./JS/routes.js"></script>
 	<script src="./JS/welcome.js"></script>
+	<script src="./JS/todolist.js"></script>
+	
 </body>
 
 </html>
