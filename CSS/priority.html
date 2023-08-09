@@ -6,29 +6,29 @@
     <title>priority</title>
 
     <style>
-        button {
             #btn { 
                 /* id스타일 */
-                color : blue;
+                background-color : blue;
             }
             .c-button {
                 /* 클래스 스타일 */
-                color : yellow;
+                background-color : yellow;
             }
             .test-div button {
                 /* 클래스 + 버튼 -> 그냥 클래스보다 높아진다.  */
-                color : red;
+                background-color : red;
             }
             button {
-                color : red; } 
-
-
-        }
+                background-color : salmon; } 
+        
     </style>
 </head>
 <body>
     <div class="test-div">
         <button id = "btn" class = "c-button"> 버튼 </button>
+        <button class = "test-div"> 버튼 </button>
+        <button class = "c-button"> 버튼 </button>
+        <button class = "button"> 버튼 </button>
 
         <button> 버튼2 </button>
     </div>
